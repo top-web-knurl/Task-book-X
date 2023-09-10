@@ -10,6 +10,9 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div className='App'>
+        <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
       <div className='logo-box'>
         <a href='https://github.com/electron-vite/electron-vite-react' target='_blank'>
           <img src={logoVite} className='logo vite' alt='Electron + Vite logo' />
