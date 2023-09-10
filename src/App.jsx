@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import db from './connectBd'
 import Update from '@/components/update'
 import logoVite from './assets/logo-vite.svg'
 import logoElectron from './assets/logo-electron.svg'
 import './App.scss'
 
-console.log('[App.tsx]', `Hello world from Electron ${process.versions.electron}!`)
+console.log(db)
 
 function App() {
   const [count, setCount] = useState(0)
