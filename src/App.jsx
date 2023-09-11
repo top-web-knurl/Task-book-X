@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import db from './connectBd'
+import db from './utils/connect'
 import Update from '@/components/update'
 import logoVite from './assets/logo-vite.svg'
 import logoElectron from './assets/logo-electron.svg'
