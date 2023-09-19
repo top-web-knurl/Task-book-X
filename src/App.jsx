@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import Header from './components/Header/Header';
-import db from './utils/connect'
-import './App.scss'
-
-
-
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Dashboard, Auth } from "@/layouts";
 
 function App() {
-
   return (
-
-    <div className='App'>
-      <Header />
-    </div>
-
-  )
+    <Routes>
+      <Route path="/dashboard/*" element={<Dashboard />} />
+      <Route path="/auth/*" element={<Auth />} />
+      <Route path="*" element={<Navigate to="/dashboard/home" replace />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
